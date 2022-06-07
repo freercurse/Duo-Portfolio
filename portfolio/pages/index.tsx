@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -16,7 +17,13 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Hello Bean
         </h1>
-        <Image src="https://img.btdmp.com/10327/10327979/products/0x110_x2@16540809379c306bd2bf.jpeg"  width={200} height={200}/>
+        <Link href="/profile/Vi">
+          <Image src="https://img.btdmp.com/10327/10327979/products/0x110_x2@16540809379c306bd2bf.jpeg"  width={200} height={200}/>
+        </Link>
+        <Link href="/profile/Joe">
+          <Image src="https://image.spreadshirtmedia.net/image-server/v1/mp/products/T1459A839MPA4459PT28D15720325FS7770/views/1,width=550,height=550,appearanceId=839,backgroundColor=F2F2F2/super-papi-sticker.jpg"  width={200} height={200}/>
+        </Link>
+        
       </main>
     </div>
   )
