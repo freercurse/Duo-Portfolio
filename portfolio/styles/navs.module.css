@@ -1,0 +1,22 @@
+
+
+.borderButton{
+    background-color: #003153;
+    color: white;
+    padding: 1rem;
+    border-radius: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+}
+
+.borderButton:hover{
+    background-color: #008080;
+    padding: 1rem;
+    border: 5px solid white;
+    box-shadow:  -5px 1px white,
+    2px 2px #f5970a,
+    3px 3px #f5970a,
+    4px 4px #f5970a,
+    5px 5px #f5970a;
+}
+

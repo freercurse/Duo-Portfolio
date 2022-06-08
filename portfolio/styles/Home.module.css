@@ -3,6 +3,7 @@
 }
 
 .main {
+  background-color: white;
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
@@ -10,6 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .footer {
@@ -112,5 +114,50 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.typewriter h1 {
+  color: black;
+  font-family: 'Italiana', serif;
+  overflow: hidden;
+  border-right: 1em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .5em;
+  animation:
+    typing 4s steps(14, end),
+    blink-caret .7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange
   }
 }
